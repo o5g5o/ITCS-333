@@ -1,0 +1,140 @@
+/* General Reset and Styling */
+body, h1, h2, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f3f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #ffd700;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ff6f61;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ff9f80;
+    color: #fff;
+}
+
+/* Main Sections Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Schedule Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Make table scrollable on smaller screens */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffdd99;
+}
+
+/* Photo Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery img {
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    max-width: 100%; /* Make images responsive */
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+    }
+
+    .gallery {
+        gap: 10px;
+    }
+
+    table, th, td {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+}
