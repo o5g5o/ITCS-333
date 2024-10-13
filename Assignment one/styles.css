@@ -135,29 +135,6 @@ footer {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    nav ul {
-        flex-direction: row; /* Stack navigation vertically */
-    }
-
-    nav ul li {
-        text-align: center;
-    }
-
-    .gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    table, th, td {
-        font-size: 0.9em;
-    }
-}
-
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.8em;
