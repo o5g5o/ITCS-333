@@ -56,6 +56,7 @@ Technologies Used
 File Structure
 ├── index.html      # Main HTML file for the webpage
 ├── styles.css      # Stylesheet for the webpage
+├── images/         # Where some images are stored
 └── README.md       # Project documentation
 
 How to Run
